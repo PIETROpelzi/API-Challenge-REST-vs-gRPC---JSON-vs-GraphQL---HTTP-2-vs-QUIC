@@ -12,8 +12,8 @@ public class FilmGraphQLController {
 
     // Stessa lista in memoria del REST (qui duplicata per semplicità)
     private List<Film> films = new ArrayList<>(List.of(
-            new Film(1, "Il Padrino",      "Francis Ford Coppola", 1972),
-            new Film(2, "Interstellar",    "Christopher Nolan",    2014),
+            new Film(1, "Tenet",      "Harry Ford", 2024),
+            new Film(2, "The Mask",    "Jim Nolan",    2001),
             new Film(3, "La vita è bella", "Roberto Benigni",      1997)
     ));
 
