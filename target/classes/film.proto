@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option java_package = "com.example.demo";
+option java_outer_classname = "FilmProto";
+
+service FilmService {
+  rpc GetFilm (FilmRequest) returns (FilmResponse);
+  rpc GetAllFilms (EmptyRequest) returns (FilmListResponse);
+}
+
+message FilmRequest {
+  int32 id = 1;
+}
+
+message EmptyRequest {}
+
+message Film {
+  int32 id = 1;
+  string titolo = 2;
+  string regista = 3;
+  int32 anno = 4;
+}
+
+message FilmResponse {
+  Film film = 1;
+}
+
+message FilmListResponse {
+  repeated Film films = 1;
+}
